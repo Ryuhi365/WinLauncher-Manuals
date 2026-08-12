@@ -1,0 +1,14 @@
+Id,Title,Type,Tags,Body,CopyCount,LastCopiedAt
+sample-en-received,Message received,Email,email reply,"Thank you for your message.
+I have reviewed the details.",0,
+sample-en-later,Reply later,Email,email reply,"I will review the details and reply shortly.",0,
+sample-en-done,Work completed,Chat,chat done,"The work is complete.
+Please review it when convenient.",0,
+sample-en-notes,Meeting notes,Template,meeting notes,"Purpose:
+
+Decisions:
+
+Next actions:",0,
+sample-en-checklist,Review checklist,Checklist,checklist,"[ ] Review content
+[ ] Test behavior
+[ ] Send completion notice",0,

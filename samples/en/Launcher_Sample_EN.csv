@@ -1,0 +1,11 @@
+Id,Name,Kind,Target,Tags
+sample-en-01,ChatGPT,Browser,https://chatgpt.com,ai web
+sample-en-02,Microsoft Learn,Browser,https://learn.microsoft.com/windows/,windows docs
+sample-en-03,Google Maps,Browser,https://www.google.com/maps,map travel
+sample-en-04,Bluetooth Settings,Setting,ms-settings:bluetooth,windows settings
+sample-en-05,Sound Settings,Setting,ms-settings:sound,windows settings
+sample-en-06,Sample Shared Folder,Dir,C:\WinLauncherSample\Shared,sample folder
+sample-en-07,Sample Workbook,Excel,C:\WinLauncherSample\Documents\Work.xlsx,sample excel
+sample-en-08,Sample Presentation,PowerPoint,C:\WinLauncherSample\Documents\Presentation.pptx,sample slides
+sample-en-09,Sample Manual,PDF,C:\WinLauncherSample\Documents\Manual.pdf,sample manual
+sample-en-10,Sample Website,Browser,https://example.com,sample web

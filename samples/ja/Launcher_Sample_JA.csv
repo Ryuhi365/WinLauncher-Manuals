@@ -1,0 +1,11 @@
+Id,Name,Kind,Target,Tags
+sample-ja-01,ChatGPT,Browser,https://chatgpt.com,AI Web
+sample-ja-02,Microsoft Learn,Browser,https://learn.microsoft.com/ja-jp/windows/,Windows Docs
+sample-ja-03,Google マップ,Browser,https://www.google.com/maps,Map Travel
+sample-ja-04,Bluetooth 設定,Setting,ms-settings:bluetooth,Windows Setting
+sample-ja-05,サウンド設定,Setting,ms-settings:sound,Windows Setting
+sample-ja-06,サンプル共有フォルダー,Dir,C:\WinLauncherSample\Shared,Sample Folder
+sample-ja-07,サンプル作業表,Excel,C:\WinLauncherSample\Documents\Work.xlsx,Sample Excel
+sample-ja-08,サンプル説明資料,PowerPoint,C:\WinLauncherSample\Documents\Presentation.pptx,Sample Slides
+sample-ja-09,サンプルマニュアル,PDF,C:\WinLauncherSample\Documents\Manual.pdf,Sample Manual
+sample-ja-10,サンプルWebサイト,Browser,https://example.com,Sample Web

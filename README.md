@@ -19,7 +19,7 @@ Start with a short guide to registering, finding, and opening your first items. 
 - [日本語 README](./README_JA.md)
 - [English README](./README_EN.md)
 
-For the simplest route, open `START_HERE.html` in the purchased ZIP. It links directly to the guides above, so you do not need to navigate GitHub's file list or create a GitHub account.
+The Quick Start links above open the PDF files directly. No GitHub account is required.
 
 ## Sample CSV files
 

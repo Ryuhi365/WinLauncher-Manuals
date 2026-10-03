@@ -2,6 +2,13 @@
 
 Official public user manuals and optional sample CSV files for **WinLauncher Standard**, published by **RyuhiWorks**.
 
+## Quick start
+
+Start with a short guide to registering, finding, and opening your first items. Each guide also covers common setup issues.
+
+- [日本語クイックスタート / Japanese Quick Start](./WinLauncher_Quick_Start_JA_v1.7.3.pdf)
+- [English Quick Start](./WinLauncher_Quick_Start_EN_v1.7.3.pdf)
+
 ## Manuals
 
 - [日本語マニュアル / Japanese Manual](./WinLauncher_Standard_Manual_JA.pdf)

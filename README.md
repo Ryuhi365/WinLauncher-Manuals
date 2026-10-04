@@ -39,6 +39,7 @@ The sample files are not imported automatically. Download the appropriate CSV, o
 
 ## Product pages
 
+- [Microsoft Store — Japanese and English, with a free trial](https://apps.microsoft.com/detail/9MTZJG4JPRG4)
 - [BOOTH — Japanese edition](https://ryuhiworks.booth.pm/items/8665595)
 - [Gumroad — English edition](https://2782028985040.gumroad.com/l/winlauncher-standard)
 

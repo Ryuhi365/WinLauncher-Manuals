@@ -1,48 +1,53 @@
-# WinLauncher Standard Manuals and Sample CSV Files
+# WinLauncher Standard — Guides and sample CSV files
 
-Official public user manuals and optional sample CSV files for **WinLauncher Standard**, published by **RyuhiWorks**.
+## 日本語
 
-## Quick start
+**v1.14.0 の説明書です。Store更新は審査中です。現在の公開版は下の旧版資料も参照してください。GitHubアカウントは不要です。**
 
-Start with a short guide to registering, finding, and opening your first items. Each guide also covers common setup issues.
+- [日本語マニュアルを開く](./WinLauncher_Standard_Manual_JA.pdf)
+- [Launcher用サンプルCSV](./samples/ja/Launcher_Sample_JA.csv)
+- [Snippet用サンプルCSV](./samples/ja/Snippets_Sample_JA.csv)
+- [サンプルの使い方](./samples/ja/README_JA.txt)
 
-- [日本語クイックスタート / Japanese Quick Start](./WinLauncher_Quick_Start_JA_v1.7.3.pdf)
-- [English Quick Start](./WinLauncher_Quick_Start_EN_v1.7.3.pdf)
+Store版はインストール後そのまま起動します。ZIP版は展開してWinLauncher.exeを起動してください。
 
-## Manuals
+①ファイル・フォルダ・URLを登録する → ②Alt+Spaceから名前やTagで検索する → ③↑↓で選んでCtrl+Enterで開く。
 
-- [日本語マニュアル / Japanese Manual](./WinLauncher_Standard_Manual_JA.pdf)
-- [English Manual](./WinLauncher_Standard_Manual_EN.pdf)
+ファイルやフォルダの登録はドラッグ＆ドロップから。Alt+VはコピーしたパスやURL、Alt+Nは手入力です。SnippetモードでAlt+Vを使うと、コピーした文章から定型文を登録します。
 
-## Text guides
+サンプルCSVは自動では読み込みません。Launcher用はLauncherモード、Snippet用はSnippetモードの「CSV取込」から選びます。架空のパスや例文を自分の環境へ書き換え、既存の一覧があれば先にCSVでバックアップしてください。
 
-- [日本語 README](./README_JA.md)
-- [English README](./README_EN.md)
+PDFはダウンロードして開くと、GitHubのプレビュー範囲に制限されず全ページを確認できます。
 
-The Quick Start links above open the PDF files directly. No GitHub account is required.
+## English
 
-## Sample CSV files
+**Documentation for v1.14.0. The Store update is under certification; see the previous-version guides for the currently published version. No GitHub account is needed.**
 
-### 日本語
-
-- [Launcher サンプルCSV](./samples/ja/Launcher_Sample_JA.csv)
-- [Snippets サンプルCSV](./samples/ja/Snippets_Sample_JA.csv)
-- [使い方](./samples/ja/README_JA.txt)
-
-### English
-
+- [Open the English manual](./WinLauncher_Standard_Manual_EN.pdf)
 - [Launcher sample CSV](./samples/en/Launcher_Sample_EN.csv)
-- [Snippets sample CSV](./samples/en/Snippets_Sample_EN.csv)
+- [Snippet sample CSV](./samples/en/Snippets_Sample_EN.csv)
 - [How to use the samples](./samples/en/README_EN.txt)
 
-The sample files are not imported automatically. Download the appropriate CSV, open the corresponding tab in WinLauncher, and select **Import CSV / CSV取込**. Sample paths and organization URLs may not work on your computer, so edit them for your environment. Consider backing up your existing data before importing.
+Store edition: install and launch. ZIP edition: extract the ZIP and run WinLauncher.exe.
 
-## Product pages
+Register a file, folder or URL. Press Alt+Space to search by name or tags. Select one item with Up/Down and press Ctrl+Enter to open it.
 
-- [Microsoft Store — Japanese and English, with a free trial](https://apps.microsoft.com/detail/9MTZJG4JPRG4)
-- [BOOTH — Japanese edition](https://ryuhiworks.booth.pm/items/8665595)
-- [Gumroad — English edition](https://2782028985040.gumroad.com/l/winlauncher-standard)
+Drag and drop registers files and folders. Alt+V adds a copied path or URL, and Alt+N opens manual registration. In Snippet mode, Alt+V adds copied text as a reusable snippet.
 
-The WinLauncher application and sales ZIP files are not included in this repository. Please purchase the application from the official product pages above.
+Samples are optional and are not loaded automatically. In Launcher mode, use Import for the Launcher CSV. In Snippet mode, use Import for the Snippet CSV. Replace the example paths and text for your own environment. Export a CSV backup of your existing list first.
 
-© 2026 RyuhiWorks. All rights reserved.
+Download a PDF to read all pages if GitHub shows only a limited preview.
+
+## Product pages / 製品ページ
+
+- [Microsoft Store — Japanese and English, 30-day trial](https://apps.microsoft.com/detail/9MTZJG4JPRG4)
+- [BOOTH](https://ryuhiworks.booth.pm/items/8665595)
+- [Gumroad](https://2782028985040.gumroad.com/l/winlauncher-standard)
+
+The application itself is available from the product pages. This repository contains documentation and samples.
+
+## Previous version / 旧版
+
+[v1.7.3 documentation and samples / 説明書とサンプル](./archive/v1.7.3/README.md)
+
+© 2026 RyuhiWorks

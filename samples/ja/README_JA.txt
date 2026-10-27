@@ -1,6 +1,7 @@
-WinLauncher Standard 公開サンプルCSV
+WinLauncher Standard サンプルCSV
 
-Launcherタブでは Launcher_Sample_JA.csv、Snippetsタブでは Snippets_Sample_JA.csv を「CSV取込」から選択してください。
+Launcher_Sample_JA.csv は Launcher モードで、Snippets_Sample_JA.csv は Snippet モードで「CSV取込」から選択してください。
+モードを変えるときは Ctrl+Alt を押したまま矢印キーで選び、キーを離します。
 
 注意:
 - サンプルは自動では読み込まれません。

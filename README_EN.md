@@ -1,5 +1,18 @@
 # WinLauncher Standard
 
+## What changes in v1.14.0 compared with the public v1.7.3 edition
+
+Everyday search, selection and opening are keyboard-first. Drag and drop is also available for registration.
+
+- **Explore**: browse around a registered item. Hold Ctrl, select with Up/Down, enter with Right, return with Left and open with Enter. Opening an item in the normal list uses Ctrl+Enter.
+- **Light and dark**: Alt+Shift+D saves your colour scheme and restarts the app to apply it. The app does not automatically follow the Windows colour setting.
+- **Bulk retagging**: in Launcher or Snippet, select entries and press Alt+T. Enter tags to add, prefix tags to remove with -, then confirm with Ctrl+Enter in the confirmation window.
+- **Enhanced Recent**: Windows and Office recent items appear together, with Alt+F to filter by type. Results depend on your setup and type filter.
+
+Start with one file, one folder and one web link you use regularly. Open them again the next day and notice whether it changes the effort of finding them.
+
+CSV exports are copies of lists, not full backups of run history and settings. Before updating the ZIP edition, quit the app and back up the whole saved-data folder to a separate location. Old and new executables still share saved data when run by the same Windows user, even in different application folders.
+
 Start every Windows workday from `Alt+Space`.
 
 WinLauncher Standard is a practical Windows launcher for opening the files, folders, web pages, OneNote pages, SharePoint sites, shared folders and reusable text you use every day.
@@ -21,16 +34,8 @@ A good first three:
 
 After that, add things as you notice them: whenever you catch yourself hunting for the same thing, or typing the same sentence again.
 
-## What is in the ZIP
-The ZIP is a single file that works in both Japanese and English. There is no separate download per language.
-
-- `WinLauncher.exe`
-- `README_FIRST.txt`
-- `ChangeLog.md`
-- `en` folder — `README.md` / `LICENSE.txt` / `WinLauncher_Manual_EN.pdf` / `sample`
-- `ja` folder — the same set in Japanese
-
-The `en\sample` folder holds sample CSV files that show what is worth registering. They are not loaded automatically. Read them for ideas and add items by hand, or try `Import CSV` — in that case rewrite the paths, URLs and wording for your own environment first.
+## Package contents
+The ZIP contains the application, license terms and a link to these public guides. Manuals and sample CSV files are hosted here, not bundled in the ZIP.
 
 ## Getting started
 1. Extract the ZIP anywhere you like.
@@ -44,7 +49,7 @@ Right-click the WinLauncher icon in the notification area and choose `日本語`
 Exit and restart WinLauncher to apply the change. Your choice is saved and kept for the next launch. On first run the app follows your Windows display language.
 
 ## System requirements
-- Windows 10 or Windows 11, 64-bit
+- Recommended and tested environment: Windows 11, 64-bit
 - An internet connection is needed only for features that open a web page or run a web search
 
 Notes:
@@ -91,26 +96,28 @@ Filter your items by name or by tag. A tag like "expense" or "quarterly" is enou
 ### Reuse text
 Save email replies, chat messages, enquiry responses, work logs, form templates, checklists and code as Snippets. Search for one and copy it to the clipboard when you need it.
 
-### Search modes
-Type `/` at the start or the end of the search box and a list of modes appears. Both `/mode keyword` and `keyword /mode` work, so when a normal search does not find what you want, you can just append a mode at the end.
+### Modes
+Hold Ctrl+Alt to show the mode tiles. Keep the keys held while you choose a mode with the arrow keys, then release to switch. The text in the search box stays in place.
 
-| Mode | What it searches |
+| Mode | What it does |
 | --- | --- |
-| `/Everything` | Files on this PC, through Everything (voidtools) |
-| `/Edge` | Your Microsoft Edge bookmarks |
-| `/Search` | Pick a destination such as Google AI, Amazon or Rakuten |
-| `/ConvSPLink` | Converts a SharePoint UNC path to a URL and back |
-| `/Recent` | Recently used files, as recorded by Windows |
-| `/Snippet` | Your saved Snippets |
-| `/DropDest` | The destination folders used by the Drops window |
+| `Launcher` | Your registered items, filtered by the names and tags you gave them |
+| `Edge` | Your Microsoft Edge bookmarks |
+| `SearchHub` | Searches the text you typed on a fixed set of sites |
+| `Everything` | Files on this PC, through Everything (voidtools) |
+| `Recent` | Recently used files, as recorded by Windows |
+| `Snippet` | Your saved Snippets; Ctrl+Enter copies the text to the clipboard |
+| `SPLinkConverter` | Converts a SharePoint UNC path to a URL and back |
+| `CopyTo` | The destination folders used by the Drops window |
+| `OnTheDesk` | The files and folders you have open right now |
 
-`/Everything` needs Everything (voidtools) installed and running. It is not required — without it, only that one mode returns no results, and everything else works as normal.
+`Everything` needs Everything (voidtools) installed and running. It is not required — without it, only that one mode returns no results, and everything else works as normal.
 
 ### Drops
 A small window beside the Launcher with two drop targets:
 
 - **Convert to PDF (ppt/word)** — drop PowerPoint or Word files to write PDFs into the same folder. This needs PowerPoint or Word installed.
-- **Copy to a registered folder** — drop files or folders to copy them into a folder you registered with `/DropDest`. You can rename them on the way. You can also drop an Outlook mail attachment straight onto the tile.
+- **Copy to a registered folder** — drop files or folders to copy them into a folder you registered with `CopyTo`. You can rename them on the way. You can also drop an Outlook mail attachment straight onto the tile.
 
 ### Tasks
 A light task list that sits beside the Launcher. It is hidden on first run; press `Alt+Shift+3` to show it, and the setting is remembered.
@@ -148,18 +155,17 @@ Launcher items and Snippets can both be exported to CSV and imported back.
 
 ### Launcher
 - `Ctrl+Enter` — open the selected item
-- `Alt+Shift+Space` — register whatever is selected in Explorer or another app
+- `Alt+Shift+Space` — register an item selected in Explorer or highlighted path text in another app
 - `Alt+N` — add by hand
 - `Alt+V` — add the URL or path on the clipboard
 - `Alt+Enter` — edit
 - `Alt+Delete` — delete
 - `Alt+C` — copy the path or URL
-- `Alt+O` — open the parent folder
 - `Alt+R` — change the sort order
 - `Alt+S` — Google search
 
 ### Snippets
-- `Alt+2` — go to Snippets
+- Hold `Ctrl+Alt`, select the `Snippet` tile with the arrow keys, then release — switch to Snippets
 - `Ctrl+Enter` — copy the selected Snippet
 - `Alt+N` — add
 - `Alt+V` — add from the clipboard
@@ -185,7 +191,7 @@ Notes:
 - Common URLs are filed as `Browser`, folders as `Dir`, Office files as `Excel` / `PowerPoint` / `PDF` / `OneNote`, and Teams channels and group chats as `Teams`.
 - The Snippets samples include email replies, chat messages, meeting notes, work logs, SQL and Power Query.
 - The fictional file paths will not open as they are. Rewrite them for your own PC or workplace.
-- If you try `Import CSV`, the rows are merged into your existing data. Back up first if that matters.
+- If you use `Import`, the rows are merged into your existing data. Export a CSV backup first.
 
 ## Where your data is stored
 Everything is stored locally under `%LocalAppData%\WinLauncher`. No cloud account is required.
@@ -275,7 +281,7 @@ A file you open every morning, a shared folder you use often, and a piece of tex
 No. Email replies, chat messages, work notes, form templates and checklists all work well.
 
 ### Does it index my PC?
-Not by itself. WinLauncher shows what you registered. If you install Everything (voidtools) and use `/Everything`, that mode searches your files through Everything — but it is optional, and the rest of the app does not depend on it.
+Not by itself. WinLauncher shows what you registered. If you install Everything (voidtools) and switch to the `Everything` mode, that mode searches your files through Everything — but it is optional, and the rest of the app does not depend on it.
 
 ### Do I need an internet connection?
 The core features work locally. You need a connection only for features that open a web page or run a web search.

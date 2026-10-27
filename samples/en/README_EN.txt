@@ -1,6 +1,7 @@
-WinLauncher Standard public sample CSV files
+WinLauncher Standard sample CSV files
 
-On the Launcher tab, select Launcher_Sample_EN.csv from Import CSV. On the Snippets tab, select Snippets_Sample_EN.csv.
+In Launcher mode, click Import and choose Launcher_Sample_EN.csv. In Snippet mode, click Import and choose Snippets_Sample_EN.csv.
+To switch modes, hold Ctrl+Alt, select a mode with the arrow keys, then release the keys.
 
 Notes:
 - Samples are not imported automatically.

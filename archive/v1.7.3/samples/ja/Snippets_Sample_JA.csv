@@ -1,0 +1,14 @@
+Id,Title,Type,Tags,Body,CopyCount,LastCopiedAt
+sample-ja-received,確認しました,Mail,mail reply,"ご連絡ありがとうございます。
+内容を確認しました。",0,
+sample-ja-later,後ほど返信します,Mail,mail reply,"内容を確認のうえ、後ほど返信します。",0,
+sample-ja-done,完了連絡,Chat,chat done,"対応が完了しました。
+ご確認をお願いします。",0,
+sample-ja-notes,会議メモ,Template,meeting notes,"目的:
+
+決定事項:
+
+次の対応:",0,
+sample-ja-checklist,確認用チェックリスト,Checklist,checklist,"[ ] 内容確認
+[ ] 動作確認
+[ ] 完了連絡",0,

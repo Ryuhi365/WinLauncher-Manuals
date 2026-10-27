@@ -1,5 +1,18 @@
 # WinLauncher Standard
 
+## v1.14.0で加わる使い方（販売版v1.7.3との比較）
+
+日常の検索・選択・実行はキーボード中心です。登録はドラッグ＆ドロップも使えます。
+
+- **階層探索（Explore）**：登録項目を起点に周辺をたどれます。Ctrlを長押しし、↑↓で選択、→で中へ、←で戻り、Enterで開きます。一覧での通常の実行はCtrl+Enterです。
+- **ライト／ダーク**：Alt+Shift+Dで配色を保存し、自動再起動して反映します。Windowsの配色への自動追従ではありません。
+- **Tagの一括整理**：LauncherまたはSnippetで項目を選びAlt+T。追加するTagと、削除するTag（先頭に -）を入力し、確認画面でCtrl+Enterで確定します。
+- **Recentの強化**：WindowsとOfficeの最近使った項目をまとめ、Alt+Fで種類を絞れます。表示は環境と種類フィルターにより異なります。
+
+まずは毎日使うファイル・フォルダ・Webリンクを1件ずつ。翌日も同じものを呼び出して、探し直す手間がどう変わるか試してみてください。
+
+更新前のCSV出力は一覧の控えであり、実行履歴や設定の完全バックアップではありません。ZIP版の更新前はアプリを終了し、保存データフォルダ全体を別の場所へバックアップしてください。新旧EXEを別フォルダに置いても、同じWindowsユーザーでは保存データを共有します。
+
 毎日の Windows 作業を、`Alt+Space` から始める。
 
 WinLauncher Standard は、よく使うファイル、フォルダ、Webページ、OneNote、SharePoint、共有フォルダ、定型文をすばやく呼び出すための Windows 実務用ランチャーです。
@@ -21,17 +34,7 @@ Snippets は「書く・貼る・思い出す」を減らします。
 使う中で「また探している」「また同じ文を書いている」と感じたものを、少しずつ追加していきます。
 
 ## 配布内容
-販売版 zip には、以下が入っています。日本語と英語で1つのファイルです。
-
-- `WinLauncher.exe`
-- `README_FIRST.txt`
-- `ChangeLog.md`
-- `ja` フォルダ（`README.md` / `LICENSE.txt` / `WinLauncher_Manual_JA.pdf` / `sample`）
-- `en` フォルダ（English versions of the same set）
-
-`ja\sample` フォルダには、最初に何を登録すればよいかをイメージするための参考用CSVが入っています。
-
-サンプルCSVは自動では読み込まれません。内容を参考にして手動登録するか、`CSV取込` で試す場合は、必要に応じてパスやURL、文面を自分用に書き換えてください。
+ZIP版には本体、使用許諾条件、GitHubへの案内リンクを収録しています。説明書・サンプルCSV・更新履歴はこの公開サイトで確認できます。PDFはZIPに同梱しません。
 
 ## 起動方法
 1. zip を任意のフォルダへ展開します。
@@ -49,7 +52,7 @@ Snippets は「書く・貼る・思い出す」を減らします。
 販売版は、.NET ランタイムを別途インストールしなくても起動できる self-contained 形式で配布しています。
 
 動作環境:
-- Windows 10 / 11、64ビット環境
+- 推奨・動作確認環境：Windows 11（64bit）
 - Webページを開く機能やWeb検索を使う場合は、インターネット接続が必要です。
 
 注意:
@@ -109,27 +112,28 @@ Explorer の階層をたどったり、ブラウザのお気に入りを探し�
 
 これは主機能ではなく、作業中の小さな補助機能です。
 
-### 検索モードで切り替える
-検索欄の先頭または末尾に `/` を付けると、モード名の候補が出ます。
-`/モード名 キーワード` でも `キーワード /モード名` でも切り替えられるので、通常の検索で目的のものが出ないときは、末尾に付け足すだけで他のモードへ移れます。
+### モードを切り替える
+`Ctrl+Alt` を押すと、モードのタイルが出ます。押したまま矢印キーで選び、キーを離すと切り替わります。検索欄に打った文字はそのまま残ります。Launcher を含めて9つあります。
 
-| モード | 検索対象 |
+| モード | 探す先 |
 | --- | --- |
-| `/Everything` | PC内のファイル（Everything(voidtools) 経由） |
-| `/Edge` | Microsoft Edge のブックマーク |
-| `/Search` | Google AI、Amazon、楽天市場などの検索先を選ぶ |
-| `/ConvSPLink` | SharePoint の UNC パスと URL を相互変換する |
-| `/Recent` | Windows が記録した最近使ったファイル |
-| `/Snippet` | 保存済みの Snippets |
-| `/DropDest` | Drops の「登録済みフォルダへコピー」で使う登録先フォルダ |
+| `Launcher` | 登録した項目（自分で付けた名前とタグで絞り込み） |
+| `Edge` | Microsoft Edge のブックマーク |
+| `Everything` | PC内のファイル（Everything(voidtools) 経由） |
+| `Recent` | Windows が記録した最近使ったファイル |
+| `OnTheDesk` | いま開いているファイルとフォルダ |
+| `SearchHub` | 検索欄の文字を、主要なサイトから検索する |
+| `Snippet` | 保存済みの Snippets |
+| `SPLinkConverter` | SharePoint の UNC パスと URL を相互変換する |
+| `CopyTo` | Drops の「登録済みフォルダへコピー」で使う登録先フォルダ |
 
-`/Everything` は Everything(voidtools) が入って動いている場合に使えます。必須ではありません。未導入なら、そのモードだけ0件になり、他の機能は通常どおり動きます。
+`Everything` は Everything(voidtools) が入って動いている場合に使えます。必須ではありません。未導入なら、そのモードだけ0件になり、他の機能は通常どおり動きます。
 
 ### Drops でドロップして処理する
 Launcher の横に出る小さなウィンドウに、2つのドロップ枠があります。
 
 - **PDF化 (ppt/word)** — PowerPoint / Word ファイルをドロップすると、同じフォルダへ PDF を出力します。PowerPoint / Word が必要です。
-- **登録済みフォルダへコピー** — ファイルやフォルダをドロップすると、`/DropDest` で登録したフォルダへコピーします。コピー時に名前を変えられます。Outlook メールの添付ファイルを直接ドロップすることもできます。
+- **登録済みフォルダへコピー** — ファイルやフォルダをドロップすると、`CopyTo` で登録したフォルダへコピーします。コピー時に名前を変えられます。Outlook メールの添付ファイルを直接ドロップすることもできます。
 
 ### Tasks で作業中の小さなタスクを持つ
 Launcher の横に置ける、軽いタスク一覧です。初回起動時は畳んであります。`Alt+Shift+3` で表示でき、その設定は保存されます。
@@ -167,18 +171,17 @@ Launcher の項目と Snippets は、どちらも CSV で書き出し・取り�
 
 ### Launcher
 - `Ctrl+Enter`: 選択中の項目を開く
-- `Alt+Shift+Space`: Explorerなどで選択中の項目を登録
+- `Alt+Shift+Space`: Explorerなどで選択中の項目、または選択中の文字列パスを登録
 - `Alt+N`: 手動登録
 - `Alt+V`: クリップボードのURLやパスを登録
 - `Alt+Enter`: 編集
 - `Alt+Delete`: 削除
 - `Alt+C`: パスやURLをコピー
-- `Alt+O`: 親フォルダを開く
 - `Alt+R`: 並び順切替
 - `Alt+S`: Web検索補助
 
 ### Snippets
-- `Alt+2`: Snippets へ移動
+- `Ctrl+Alt`: Snippet モードへ切り替え
 - `Ctrl+Enter`: 選択中の Snippet をコピー
 - `Alt+N`: 新規登録
 - `Alt+V`: クリップボードから登録
@@ -317,7 +320,7 @@ URLとして開ける Teams のチャネル、グループチャット、会議�
 ただし、会社やMicrosoft 365環境の設定によっては、登録しても開けない場合があります。
 
 ### Q. PC内を検索しますか？
-それ自体はしません。WinLauncher は、あなたが登録したものを表示します。Everything(voidtools) を入れて `/Everything` モードを使った場合だけ、Everything 経由でPC内のファイルを検索します。これは任意で、他の機能は Everything に依存しません。
+それ自体はしません。WinLauncher は、あなたが登録したものを表示します。Everything(voidtools) を入れて `Everything` モードを使った場合だけ、Everything 経由でPC内のファイルを検索します。これは任意で、他の機能は Everything に依存しません。
 
 ### Q. Tasks や Drops は使えますか？
 使えます。Tasks は初回起動時は畳んであり、`Alt+Shift+3` で表示できます。Drops は最初から表示され、「PDF化 (ppt/word)」と「登録済みフォルダへコピー」の2つの枠があります。PDF化には PowerPoint / Word が必要です。

@@ -1,5 +1,9 @@
 # WinLauncher Standard — Guides and sample CSV files
 
+ここが説明書の入口です。日本語・英語とも、下のPDFに操作説明をまとめています。別冊クイックスタートは不要で、最初の操作はPDFの2ページから確認できます。
+
+This is the single starting page. The PDFs below contain the instructions, including getting started on page 2; no separate Quick Start is required.
+
 ## 日本語
 
 **v1.14.0 の説明書です。Store更新は審査中です。現在の公開版は下の旧版資料も参照してください。GitHubアカウントは不要です。**

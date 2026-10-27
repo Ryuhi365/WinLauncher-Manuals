@@ -6,7 +6,7 @@ This is the single starting page. The PDFs below contain the instructions, inclu
 
 ## 日本語
 
-**v1.14.0 の説明書です。Store更新は審査中です。現在の公開版は下の旧版資料も参照してください。GitHubアカウントは不要です。**
+**v1.14.0 の説明書です。Microsoft Store版v1.14.0は公開済みです。GitHubアカウントは不要です。**
 
 - [日本語マニュアルを開く](./WinLauncher_Standard_Manual_JA.pdf)
 - [Launcher用サンプルCSV](./samples/ja/Launcher_Sample_JA.csv)
@@ -25,7 +25,7 @@ PDFはダウンロードして開くと、GitHubのプレビュー範囲に制�
 
 ## English
 
-**Documentation for v1.14.0. The Store update is under certification; see the previous-version guides for the currently published version. No GitHub account is needed.**
+**Documentation for v1.14.0, now published on Microsoft Store. No GitHub account is needed.**
 
 - [Open the English manual](./WinLauncher_Standard_Manual_EN.pdf)
 - [Launcher sample CSV](./samples/en/Launcher_Sample_EN.csv)

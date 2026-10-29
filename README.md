@@ -17,6 +17,8 @@ Store版はインストール後そのまま起動します。ZIP版は展開し
 
 ①ファイル・フォルダ・URLを登録する → ②Alt+Spaceから名前やTagで検索する → ③↑↓で選んでCtrl+Enterで開く。
 
+最初は実際によく使うものを3件だけ登録し、翌日そのうち1件を名前かTagで呼び出してみてください。探し直す手間が変わるか、自分の使い方で確かめられます。
+
 ファイルやフォルダの登録はドラッグ＆ドロップから。Alt+VはコピーしたパスやURL、Alt+Nは手入力です。SnippetモードでAlt+Vを使うと、コピーした文章から定型文を登録します。
 
 サンプルCSVは自動では読み込みません。Launcher用はLauncherモード、Snippet用はSnippetモードの「CSV取込」から選びます。架空のパスや例文を自分の環境へ書き換え、既存の一覧があれば先にCSVでバックアップしてください。
@@ -35,6 +37,8 @@ PDFはダウンロードして開くと、GitHubのプレビュー範囲に制�
 Store edition: install and launch. ZIP edition: extract the ZIP and run WinLauncher.exe.
 
 Register a file, folder or URL. Press Alt+Space to search by name or tags. Select one item with Up/Down and press Ctrl+Enter to open it.
+
+Start with just three items you actually use. The next day, call up one of them by name or tag and see whether it changes the effort of finding it again.
 
 Drag and drop registers files and folders. Alt+V adds a copied path or URL, and Alt+N opens manual registration. In Snippet mode, Alt+V adds copied text as a reusable snippet.
 
